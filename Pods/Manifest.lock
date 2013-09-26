@@ -1,0 +1,22 @@
+PODS:
+  - ActionSheetPicker2 (0.1)
+  - AFNetworking (1.3.2)
+  - BlocksKit (1.8.3):
+    - libffi
+  - libffi (3.0.13)
+  - SVProgressHUD (0.9)
+
+DEPENDENCIES:
+  - ActionSheetPicker2 (~> 0.1)
+  - AFNetworking (~> 1.3.1)
+  - BlocksKit
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  ActionSheetPicker2: 1a097a29ab437ea47356f3477e7a47e175a90445
+  AFNetworking: 7f9bcd7c287a75476cd5c61e82fd3380e93e4c54
+  BlocksKit: 27257f9cbbec0ea98c80ba83cc2ea7111ae62eb2
+  libffi: 64ef39353e747bb2b25e1026afd96a157bf9231c
+  SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
+
+COCOAPODS: 0.25.0
