@@ -24,6 +24,7 @@
 		7572D17417F48ADF002DA438 /* AKNDSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17317F48ADF002DA438 /* AKNDSTViewController.m */; };
 		7572D17717F48D2C002DA438 /* AKNTableSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17617F48D2C002DA438 /* AKNTableSampleViewController.m */; };
 		7572D17A17F493E9002DA438 /* AKNDateSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17917F493E9002DA438 /* AKNDateSelectViewController.m */; };
+		7572D18017F49860002DA438 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7572D17F17F49860002DA438 /* Default-568h@2x.png */; };
 		D7255F6D8EB24CB58D21449F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DA59E2F32441F3A853F973 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		7572D17617F48D2C002DA438 /* AKNTableSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNTableSampleViewController.m; sourceTree = "<group>"; };
 		7572D17817F493E9002DA438 /* AKNDateSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNDateSelectViewController.h; sourceTree = "<group>"; };
 		7572D17917F493E9002DA438 /* AKNDateSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNDateSelectViewController.m; sourceTree = "<group>"; };
+		7572D17F17F49860002DA438 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E5068779294F4411A3E690EF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 		7572D14417F4893C002DA438 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7572D17F17F49860002DA438 /* Default-568h@2x.png */,
 				7572D14517F4893C002DA438 /* EricSample-Info.plist */,
 				7572D14617F4893C002DA438 /* InfoPlist.strings */,
 				7572D14917F4893C002DA438 /* main.m */,
@@ -255,6 +258,7 @@
 				7572D15617F4893C002DA438 /* Images.xcassets in Resources */,
 				7572D14817F4893C002DA438 /* InfoPlist.strings in Resources */,
 				7572D15117F4893C002DA438 /* Main.storyboard in Resources */,
+				7572D18017F49860002DA438 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
