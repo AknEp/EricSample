@@ -23,6 +23,8 @@
 		7572D16917F4893C002DA438 /* EricSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D16817F4893C002DA438 /* EricSampleTests.m */; };
 		7572D17417F48ADF002DA438 /* AKNDSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17317F48ADF002DA438 /* AKNDSTViewController.m */; };
 		7572D17717F48D2C002DA438 /* AKNTableSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17617F48D2C002DA438 /* AKNTableSampleViewController.m */; };
+		7572D17A17F493E9002DA438 /* AKNDateSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17917F493E9002DA438 /* AKNDateSelectViewController.m */; };
+		D7255F6D8EB24CB58D21449F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DA59E2F32441F3A853F973 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55DA59E2F32441F3A853F973 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7572D13A17F4893C002DA438 /* EricSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EricSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7572D13D17F4893C002DA438 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7572D13F17F4893C002DA438 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +62,9 @@
 		7572D17317F48ADF002DA438 /* AKNDSTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNDSTViewController.m; sourceTree = "<group>"; };
 		7572D17517F48D2C002DA438 /* AKNTableSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNTableSampleViewController.h; sourceTree = "<group>"; };
 		7572D17617F48D2C002DA438 /* AKNTableSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNTableSampleViewController.m; sourceTree = "<group>"; };
+		7572D17817F493E9002DA438 /* AKNDateSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNDateSelectViewController.h; sourceTree = "<group>"; };
+		7572D17917F493E9002DA438 /* AKNDateSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNDateSelectViewController.m; sourceTree = "<group>"; };
+		E5068779294F4411A3E690EF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 				7572D14017F4893C002DA438 /* CoreGraphics.framework in Frameworks */,
 				7572D14217F4893C002DA438 /* UIKit.framework in Frameworks */,
 				7572D13E17F4893C002DA438 /* Foundation.framework in Frameworks */,
+				D7255F6D8EB24CB58D21449F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +99,7 @@
 				7572D16217F4893C002DA438 /* EricSampleTests */,
 				7572D13C17F4893C002DA438 /* Frameworks */,
 				7572D13B17F4893C002DA438 /* Products */,
+				E5068779294F4411A3E690EF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +119,7 @@
 				7572D13F17F4893C002DA438 /* CoreGraphics.framework */,
 				7572D14117F4893C002DA438 /* UIKit.framework */,
 				7572D15C17F4893C002DA438 /* XCTest.framework */,
+				55DA59E2F32441F3A853F973 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +136,8 @@
 				7572D17317F48ADF002DA438 /* AKNDSTViewController.m */,
 				7572D17517F48D2C002DA438 /* AKNTableSampleViewController.h */,
 				7572D17617F48D2C002DA438 /* AKNTableSampleViewController.m */,
+				7572D17817F493E9002DA438 /* AKNDateSelectViewController.h */,
+				7572D17917F493E9002DA438 /* AKNDateSelectViewController.m */,
 				7572D15517F4893C002DA438 /* Images.xcassets */,
 				7572D14417F4893C002DA438 /* Supporting Files */,
 			);
@@ -169,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7572D16C17F4893C002DA438 /* Build configuration list for PBXNativeTarget "EricSample" */;
 			buildPhases = (
+				C27283C9FC064CC7988F6BE0 /* Check Pods Manifest.lock */,
 				7572D13617F4893C002DA438 /* Sources */,
 				7572D13717F4893C002DA438 /* Frameworks */,
 				7572D13817F4893C002DA438 /* Resources */,
+				67EE771A3C4A4069B83C46EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,12 +268,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67EE771A3C4A4069B83C46EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27283C9FC064CC7988F6BE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7572D13617F4893C002DA438 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7572D14A17F4893C002DA438 /* main.m in Sources */,
+				7572D17A17F493E9002DA438 /* AKNDateSelectViewController.m in Sources */,
 				7572D17417F48ADF002DA438 /* AKNDSTViewController.m in Sources */,
 				7572D17717F48D2C002DA438 /* AKNTableSampleViewController.m in Sources */,
 				7572D15417F4893C002DA438 /* AKNViewController.m in Sources */,
@@ -388,6 +435,7 @@
 		};
 		7572D16D17F4893C002DA438 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5068779294F4411A3E690EF /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -403,6 +451,7 @@
 		};
 		7572D16E17F4893C002DA438 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5068779294F4411A3E690EF /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -477,6 +526,7 @@
 				7572D16E17F4893C002DA438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7572D16F17F4893C002DA438 /* Build configuration list for PBXNativeTarget "EricSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +535,7 @@
 				7572D17117F4893C002DA438 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
