@@ -21,6 +21,7 @@
 		7572D15F17F4893C002DA438 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7572D14117F4893C002DA438 /* UIKit.framework */; };
 		7572D16717F4893C002DA438 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7572D16517F4893C002DA438 /* InfoPlist.strings */; };
 		7572D16917F4893C002DA438 /* EricSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D16817F4893C002DA438 /* EricSampleTests.m */; };
+		7572D17417F48ADF002DA438 /* AKNDSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17317F48ADF002DA438 /* AKNDSTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		7572D16417F4893C002DA438 /* EricSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EricSampleTests-Info.plist"; sourceTree = "<group>"; };
 		7572D16617F4893C002DA438 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7572D16817F4893C002DA438 /* EricSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EricSampleTests.m; sourceTree = "<group>"; };
+		7572D17217F48ADF002DA438 /* AKNDSTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNDSTViewController.h; sourceTree = "<group>"; };
+		7572D17317F48ADF002DA438 /* AKNDSTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNDSTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				7572D14F17F4893C002DA438 /* Main.storyboard */,
 				7572D15217F4893C002DA438 /* AKNViewController.h */,
 				7572D15317F4893C002DA438 /* AKNViewController.m */,
+				7572D17217F48ADF002DA438 /* AKNDSTViewController.h */,
+				7572D17317F48ADF002DA438 /* AKNDSTViewController.m */,
 				7572D15517F4893C002DA438 /* Images.xcassets */,
 				7572D14417F4893C002DA438 /* Supporting Files */,
 			);
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7572D14A17F4893C002DA438 /* main.m in Sources */,
+				7572D17417F48ADF002DA438 /* AKNDSTViewController.m in Sources */,
 				7572D15417F4893C002DA438 /* AKNViewController.m in Sources */,
 				7572D14E17F4893C002DA438 /* AKNAppDelegate.m in Sources */,
 			);
@@ -377,11 +383,13 @@
 		7572D16D17F4893C002DA438 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EricSample/EricSample-Prefix.pch";
 				INFOPLIST_FILE = "EricSample/EricSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -390,11 +398,13 @@
 		7572D16E17F4893C002DA438 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EricSample/EricSample-Prefix.pch";
 				INFOPLIST_FILE = "EricSample/EricSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
