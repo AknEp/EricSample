@@ -22,6 +22,7 @@
 		7572D16717F4893C002DA438 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7572D16517F4893C002DA438 /* InfoPlist.strings */; };
 		7572D16917F4893C002DA438 /* EricSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D16817F4893C002DA438 /* EricSampleTests.m */; };
 		7572D17417F48ADF002DA438 /* AKNDSTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17317F48ADF002DA438 /* AKNDSTViewController.m */; };
+		7572D17717F48D2C002DA438 /* AKNTableSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7572D17617F48D2C002DA438 /* AKNTableSampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		7572D16817F4893C002DA438 /* EricSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EricSampleTests.m; sourceTree = "<group>"; };
 		7572D17217F48ADF002DA438 /* AKNDSTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNDSTViewController.h; sourceTree = "<group>"; };
 		7572D17317F48ADF002DA438 /* AKNDSTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNDSTViewController.m; sourceTree = "<group>"; };
+		7572D17517F48D2C002DA438 /* AKNTableSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNTableSampleViewController.h; sourceTree = "<group>"; };
+		7572D17617F48D2C002DA438 /* AKNTableSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNTableSampleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				7572D15317F4893C002DA438 /* AKNViewController.m */,
 				7572D17217F48ADF002DA438 /* AKNDSTViewController.h */,
 				7572D17317F48ADF002DA438 /* AKNDSTViewController.m */,
+				7572D17517F48D2C002DA438 /* AKNTableSampleViewController.h */,
+				7572D17617F48D2C002DA438 /* AKNTableSampleViewController.m */,
 				7572D15517F4893C002DA438 /* Images.xcassets */,
 				7572D14417F4893C002DA438 /* Supporting Files */,
 			);
@@ -257,6 +262,7 @@
 			files = (
 				7572D14A17F4893C002DA438 /* main.m in Sources */,
 				7572D17417F48ADF002DA438 /* AKNDSTViewController.m in Sources */,
+				7572D17717F48D2C002DA438 /* AKNTableSampleViewController.m in Sources */,
 				7572D15417F4893C002DA438 /* AKNViewController.m in Sources */,
 				7572D14E17F4893C002DA438 /* AKNAppDelegate.m in Sources */,
 			);

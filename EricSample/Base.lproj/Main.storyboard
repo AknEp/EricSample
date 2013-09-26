@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Z5F-Vh-0Op">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Im6-lB-V2P">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -52,10 +52,30 @@
             </objects>
             <point key="canvasLocation" x="699" y="-338"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="8bL-am-4RI">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="Im6-lB-V2P" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kYj-vO-1pQ">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Z5F-Vh-0Op" kind="relationship" relationship="viewControllers" id="odO-Oy-4uy"/>
+                        <segue destination="Bsg-d7-xmG" kind="relationship" relationship="viewControllers" id="Etu-fM-WbR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ln-14-J64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-744" y="303"/>
+        </scene>
+        <!--Navigation Controller - navigation-->
         <scene sceneID="nbj-IT-ULr">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Z5F-Vh-0Op" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="navigation" id="HKW-vd-vOs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nCg-uG-Abs">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -66,6 +86,79 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syh-ke-Pov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="147" y="-338"/>
+        </scene>
+        <!--Table Sample View Controller - tableview-->
+        <scene sceneID="qQ0-gl-HQx">
+            <objects>
+                <viewController id="Bsg-d7-xmG" customClass="AKNTableSampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R6X-5t-fA8"/>
+                        <viewControllerLayoutGuide type="bottom" id="TM7-iP-ue7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ah0-hD-Kvf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X0n-GM-OyQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AknEp" id="QBS-Mz-Ffc">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QBS-Mz-Ffc" id="isQ-jM-5s6">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDP-PG-evn" userLabel="name">
+                                                    <rect key="frame" x="20" y="11" width="280" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="siritori" id="3Ka-E2-cgI">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Ka-E2-cgI" id="l3Z-KY-5iv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aK-fe-nv6">
+                                                    <rect key="frame" x="20" y="11" width="280" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Bsg-d7-xmG" id="cQs-m6-u5o"/>
+                                    <outlet property="delegate" destination="Bsg-d7-xmG" id="Xha-dj-IaX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X0n-GM-OyQ" firstAttribute="leading" secondItem="ah0-hD-Kvf" secondAttribute="leading" id="gwP-K3-W52"/>
+                            <constraint firstAttribute="trailing" secondItem="X0n-GM-OyQ" secondAttribute="trailing" id="ndX-O2-iyV"/>
+                            <constraint firstItem="TM7-iP-ue7" firstAttribute="top" secondItem="X0n-GM-OyQ" secondAttribute="bottom" constant="1" id="nqu-YD-91i"/>
+                            <constraint firstItem="X0n-GM-OyQ" firstAttribute="top" secondItem="ah0-hD-Kvf" secondAttribute="top" id="yQZ-tg-8cO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="tableview" id="MDN-qA-vw9"/>
+                    <connections>
+                        <outlet property="tableView" destination="X0n-GM-OyQ" id="lvu-d6-WVq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8MR-3t-gsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="505"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ptt-cp-YgV">
